@@ -1,9 +1,9 @@
 pipeline {
         agent any
         stages {
-            stage ( 'Clone') {
+            stage ('Clone') {
                 steps {
-                    git 'https://github.com/ductvit96/jenkins-github.git'
+                    git branch: 'main', credentialsId: 'ductvit96', url: 'https://github.com/ductvit96/jenkins-github.git'
 			}
 		}
 	}
