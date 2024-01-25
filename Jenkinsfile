@@ -3,5 +3,5 @@ pipeline {
         stages {
             stage ( 'Clone') {
                 steps {
-                    git 'git@github.com:ductvit96/jenkins-github.git'
+                    git 'https://github.com/ductvit96/jenkins-github.git'
 }
